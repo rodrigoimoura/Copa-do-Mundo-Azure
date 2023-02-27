@@ -1,5 +1,5 @@
 <h1 align="center">
-Coupe du Monde Azure
+Copa do Mundo Azure
 </h1>
 
 <h3 align="center">
@@ -7,7 +7,7 @@ WORKSHOP TFTEC
 </h3>
 
 <h5 align="center">
-Du 03 au 24/11/2022
+De 27/02/2023 a ?
 </h5>
 
 <p align="center">
@@ -15,54 +15,58 @@ Du 03 au 24/11/2022
 </p>
 
 <p align="center">
- <a href="#le-projet">Le projet</a> • 
- <a href="#objectifs">Objectifs</a> •
- <a href="#points-importants">Points importants</a> • 
- <a href="#exécution-du-projet">Exécution du projet</a> • 
+ <a href="#o-projeto">O Projeto</a> • 
+ <a href="#premissasdoprojeto">Premissas do Projeto</a> •
+ <a href="#pontos-importantes">Pontos Importantes</a> • 
+ <a href="#exécution-du-projet">Execução do Projeto</a> • 
  <a href="#liens">Liens</a> 
  </p>
  
-## **Le projet**
-TFTEC Store est une société (fictive) qui opère dans l'E-commerce, offrent une large gamme de produits.
-Lors de la planification de l'année 2022, des modifications ont été apportées à la TI.
-Parmi les principaux changements convenus figure la migration complète de l'infrastructure d'application et de service cloud, plus spécifiquement vers Azure.
-J'ai été embauchée pour mener à bien le projet de migration de la structure TFTEC Store vers Azure.
+## **O Projeto**
+ A TFTEC Store é uma empresa que atua no ramo de E-commerce vendendo diversos tipos de produtos.
+ Durante o planejamento do ano de 2022 foram estabelecidas mudanças para estrutura de TI;
+ Durante as principais mudaças acordadas, está a migração completa da estrutura de serviços e aplicações para nuvem, mais especificamente para o Azure.
+ 
+ Você (sua empresa) foi contratado para realizar o projeto de migração da estrutura da TFTEC Store para o Azure
 
-## **Objectifs**
-La migration vers le cloud vise à atteindre les objectifs suivants :
-- Offrir une plus grande disponibilité au site de vente ;
-- Moderniser le site de vente (ainsi que la base de données) pour le format Platform as a Service (PaaS) ;
-- Fournir une structure sécurisée pour l'application, en utilisant des certificats numériques et un domaine vérifié, selon les meilleures pratiques du marché ;
-- Effectuer la migration du serveur Active Directory vers Azure (format IaaS) ;
-- Moderniser l'authentification des applications dans un format moderne à l'aide d'Azure AD ;
-- S'assurer que les identités AD locales sont répliquées sur Azure AD, ce qui permet un utilisateur et un mot de passe uniques pour les deux environnements ;
-- Supprimer les images du catalogue de produits de la base de données et migrez-les vers la structure de stockage Azure ;
-- Assurer un accès sécurisé pour les utilisateurs administrateurs de l'application avec double facteur d'authentification (MFA) ;
-- Pour respecter les normes de conformité, supprimez les chaînes de connexion du code d'application et stockez-les dans un coffre-fort Azure ;
-- Besoin de mettre en place des pratiques DevOps (CI/CD), afin d'assurer une plus grande agilité et un plus grand contrôle dans les changements et améliorations appliqués au site de vente ;
-- Créer des environnements de développement et d'homologation pour assurer les tests, la validation et l'intégrité de toute modification nécessaire à l'application ;
-- Désactiver le Datacenter on-premise.
 
-## **Points importants**
-- De nouvelles demandes d'ajustements de sécurité et de normalisation environnementale devraient survenir tout au long du projet ;
-- TFTEC Store a validé une augmentation de la demande d'accès et d'achats d'autres pays, avec cela, il y a la possibilité d'avoir à l'avenir une structure qui répond aux clients d'autres régions, avec une bonne expérience (performance) ;
-- En raison de la demande d'autres régions (mentionnées ci-dessus), il est possible d'embaucher de nouveaux employés pour agir à distance (à l'avenir).
+## **Premissas do Projeto**
+A migração para nuvem visa atingir os seguintes objetivos:
+ - Entregar maior disponibilidade para o site de vendas;
+ - Modernizar seu site de vendas (juntamente com o banco de dados) para o formato de Plataforma como Serviço (PaaS);
+ - Entregar uma estrutura de segurança para aplicação, utilizando certificados digitais e domínio verificado;
+ - Modernizar a autenticação da aplicação para um formato moderno, utilizando Azure AD;
+ - Garantir que as identidades do AD local sejam replicadas para o Azure AD, possibilitando um único usuário e senha para ambos ambientes;
 
-## **Exécution du projet**
-- L'exécution du projet doit être réalisée sous forme de sprints (15 jours chacun) ;
-- Toutes les activités doivent être répertoriées et contrôlées via Azure DevOps ;
-- En raison de la nécessité de désactiver le Data Center On-premise, la migration des services doit être effectuée au format IaaS (application) et PaaS (base de données) dans un premier temps. Appliquer par la suite des améliorations et des modernisations à la couche applicative ;
-- Les activités techniques doivent être menées en mettant l'accent sur le temps d'indisponibilité le plus court possible du site.
+- Remover as imagens do catálogo de produtos do banco de dados e migrá-las para estrutura de storage do Azure;
+- Garantir acesso seguro para os usuários administradores da aplicação com duplo fator de autenticação (MFA);
+- Para atender padrões de Compliancem remover strings de conexão do código da aplicação e armazená-las em um Vault do Azure;
+- Necessidade de implementar práticas Devops (CI/CD), para garantir maior agilidade e controle em mudanças e melhorias aplicadas no site de vendas;
+- Criar ambientes de desenvolvimento e homologaç~]ao para garantir testes, validações e integridade de qualquer alteração necessária para aplicação;
+- Desativar o Datacenter On-Premise
+
+
+## **Pontos Importantes**
+ - Novas solicitações de ajustes de segurança e padronizações de ambiente devem surgir ao longo do projeto;
+ - A TFTEC Store tem validado um aumento de demanda nos acessos e compras de outros países, com isso, existe a possibilidade de no futuro ter uma estrutura que atenda clientes de outras regiões, com uma boa experiência (performance)
+
+## **Execução do Projeto**
+ - A execução do projeto deve ser realizada no formato de Sprints (15 dias cada) SCRUM;
+ - Toda atividade deve ser listada e controlada via Azure Devops;
+ - Devido a necessidade de desativação do Data Center On-Premise, a migração dos serviões deve ser feita no formato IaaS (aplicação) e PaaS (banco) em um primeiro momento. Posteriormente aplicar melhorias e modernizações para a camada de aplicação;
+ - As atividades técnicas devem ser realizadas com foco no menor tempo de indisponibilidade possível do site
+
+
 ---
 
-## **Etapes**
-- [Eliminatoires](https://github.com/Kastrupf/coupe-du-monde-azure/blob/main/etapes/eliminatoires.md) ✔️
-- [Phase de groupes](https://github.com/Kastrupf/coupe-du-monde-azure/blob/main/etapes/phase-de-groupes.md) ✔️
-- [Huitièmes de finale](https://github.com/Kastrupf/coupe-du-monde-azure/blob/main/etapes/huitiemes-de-finale.md) ✔️
-- [Quarts de finale](https://github.com/Kastrupf/coupe-du-monde-azure/blob/main/etapes/quarts-de-finale.md) ✔️
-- [Demi-finale](https://github.com/Kastrupf/coupe-du-monde-azure/blob/main/etapes/demi-finale.md) ✔️
-- [Finale](https://github.com/Kastrupf/coupe-du-monde-azure/blob/26c00f3299c5e0bfae68a9615070992a4b8902d9/etapes/finale.md) ✔️
-- [Finale](https://github.com/Kastrupf/coupe-du-monde-azure/blob/main/etapes/finale.md) ✔️
+## **Etapas**
+- [Eliminatórias](https://github.com/Kastrupf/coupe-du-monde-azure/blob/main/etapes/eliminatoires.md) ✔️
+- [Fase-de-Grupos](https://github.com/Kastrupf/coupe-du-monde-azure/blob/main/etapes/phase-de-groupes.md) ✔️
+- [Huitièmes-de-finale](https://github.com/Kastrupf/coupe-du-monde-azure/blob/main/etapes/huitiemes-de-finale.md) ✔️
+- [Quartas-de-Final](https://github.com/Kastrupf/coupe-du-monde-azure/blob/main/etapes/quarts-de-finale.md) ✔️
+- [Semi-Final](https://github.com/Kastrupf/coupe-du-monde-azure/blob/main/etapes/demi-finale.md) ✔️
+- [Final](https://github.com/Kastrupf/coupe-du-monde-azure/blob/26c00f3299c5e0bfae68a9615070992a4b8902d9/etapes/finale.md) ✔️
+- [Final](https://github.com/Kastrupf/coupe-du-monde-azure/blob/main/etapes/finale.md) ✔️
 
 
 ## **Liens**
